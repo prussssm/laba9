@@ -1,7 +1,9 @@
-def input_array():
-    user_input = input("Введите числа через пробел: ")
-    return list(map(int, user_input.split()))
-
+def main_menu():
+    print("Выберите задание:")
+    print("1. Сумма двух массивов")
+    print("2. Проверка трех массивов")
+    print("3. Поворот матрицы")
+    print("4. Завершение работы программы")
+    
 if __name__ == "__main__":
-    test_array = input_array()
-    print("Введенный массив:", test_array)
+    main_menu()
