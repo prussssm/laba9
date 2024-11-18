@@ -1,15 +1,7 @@
-def task_2(arr1, arr2, arr3):
-    results = []
-    
-    for a, b, c in zip(arr1, arr2, arr3):
-        if a + b == c:
-            results.append((a + b + c) ** min(a, b, c))
-    
-    return results
+def rotate_matrix(matrix):
+    return [list(reversed(col)) for col in zip(*matrix)]
 
 if __name__ == "__main__":
-    array1 = input_array()
-    array2 = input_array()
-    array3 = input_array()
-    result = task_2(array1, array2, array3)
-    print("Результат задачи 2:", result)
+    matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    rotated_matrix = rotate_matrix(matrix)
+    print("Повернутая матрица:", rotated_matrix)
